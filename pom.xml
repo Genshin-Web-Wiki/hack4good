@@ -57,8 +57,13 @@
 
 		<dependency>
 			<groupId>software.amazon.awssdk</groupId>
-			<artifactId>aws-sdk-java</artifactId>
-			<version>2.20.20</version>
+			<artifactId>comprehend</artifactId>
+			<version>2.20.26</version>
+		</dependency>
+		<dependency>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>transcribestreaming</artifactId>
+			<version>2.20.26</version>
 		</dependency>
 	</dependencies>
 
