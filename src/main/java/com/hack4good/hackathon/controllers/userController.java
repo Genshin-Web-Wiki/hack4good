@@ -9,8 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class userController {
     @Autowired
     ComprehendService comprehendService;
-    @GetMapping("/")
+    @GetMapping("/comprehend")
     public  String demo() {
         return comprehendService.detectSentiment("Buenos dias estamos muy bien, esta prueba funciona muy bien");
     }
+    @GetMapping("/hola")
+    public  String hola() {
+        return "hola";
+    }
+
 }
