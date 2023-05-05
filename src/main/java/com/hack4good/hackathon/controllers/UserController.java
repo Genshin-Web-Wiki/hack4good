@@ -25,7 +25,7 @@ public class UserController {
         return "hola";
     }
 
-    @GetMapping("/comprehend-test")
+    @GetMapping("/comprehend/test")
     public List<Entity> comprehendTest() throws IOException {
         ClassPathResource resource = new ClassPathResource("data/sample_text.json");
         String myString = new String(FileCopyUtils.copyToByteArray(resource.getInputStream()));

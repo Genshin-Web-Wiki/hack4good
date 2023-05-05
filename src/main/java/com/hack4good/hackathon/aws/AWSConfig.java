@@ -13,14 +13,14 @@ public class AWSConfig {
     public TranscribeStreamingAsyncClient transcribeStreamingAsyncClient() {
         return TranscribeStreamingAsyncClient.builder()
                 .credentialsProvider(DefaultCredentialsProvider.create())
-                .region(Region.EU_SOUTH_2) // Reemplaza con la región que prefieras
+                .region(Region.EU_WEST_2) // Reemplaza con la región que prefieras
                 .build();
     }
     @Bean
     public ComprehendClient comprehendClient() {
         return ComprehendClient.builder()
                 .credentialsProvider(DefaultCredentialsProvider.create())
-                .region(Region.EU_SOUTH_2) // Reemplaza con la región que prefieras
+                .region(Region.EU_WEST_2) // Reemplaza con la región que prefieras
                 .build();
     }
 }
