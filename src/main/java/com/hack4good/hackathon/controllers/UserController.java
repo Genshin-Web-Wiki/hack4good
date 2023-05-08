@@ -31,5 +31,4 @@ public class UserController {
         String myString = new String(FileCopyUtils.copyToByteArray(resource.getInputStream()));
         return comprehendService.detectEntities(myString);
     }
-
 }
